@@ -5,14 +5,14 @@
     android:background="#0d1b2a"
     android:gravity="center"
     android:orientation="vertical"
-    android:padding="16dp">
+    android:padding="@dimen/_12sdp">
 
     <ImageView
         android:id="@+id/admin_login_logo"
-        android:layout_width="200dp"
-        android:layout_height="150dp"
+        android:layout_width="@dimen/_150sdp"
+        android:layout_height="@dimen/_150sdp"
         android:layout_gravity="center"
-        android:layout_marginBottom="24dp"
+        android:layout_marginBottom="@dimen/_12sdp"
         android:contentDescription="@string/logo_desc"
         android:src="@drawable/logo" />
 
@@ -27,11 +27,11 @@
         android:id="@+id/et_admin_username"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="1dp"
+        android:layout_marginBottom="@dimen/_5sdp"
         android:backgroundTint="#e0e1dd"
         android:fontFamily="@font/maderaregular"
         android:hint="Admin Username"
-        android:padding="12dp"
+        android:padding="@dimen/_5sdp"
         android:textColor="#e0e1dd" />
 
     <TextView
@@ -49,7 +49,7 @@
         android:fontFamily="@font/maderaregular"
         android:hint="Admin Password"
         android:inputType="textPassword"
-        android:padding="12dp"
+        android:padding="@dimen/_5sdp"
         android:textColor="#e0e1dd" />
 
     <LinearLayout
@@ -63,7 +63,7 @@
         android:layout_height="wrap_content"
         android:text="Show Password"
         android:textColor="#e0e1dd"
-        android:layout_marginBottom="24dp"/>
+        android:layout_marginBottom="@dimen/_8sdp"/>
 
     </LinearLayout>
     <Button
@@ -74,6 +74,6 @@
         android:fontFamily="@font/maderamedium"
         android:text="Admin Login"
         android:textColor="#0d1b2a"
-        android:textSize="20dp"
+        android:textSize="@dimen/_13sdp"
         android:textStyle="bold" />
 </LinearLayout>
