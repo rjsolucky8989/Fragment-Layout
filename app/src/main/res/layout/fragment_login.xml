@@ -52,7 +52,16 @@
         android:backgroundTint="#e0e1dd"
         android:layout_marginBottom="24dp"
         android:inputType="textPassword"
-        android:fontFamily="@font/maderaregular"/>
+        android:fontFamily="@font/maderaregular"
+        />
+
+    <CheckBox
+        android:id="@+id/cb_show_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Show Password"
+        android:textColor="#e0e1dd"
+        android:layout_marginBottom="24dp"/>
 
     <Button
         android:id="@+id/btn_login_submit"

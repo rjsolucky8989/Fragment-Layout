@@ -1,10 +1,12 @@
 package com.example.fragment_layout;
 
 import android.os.Bundle;
+import android.text.InputType;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.Toast;
 
@@ -15,6 +17,7 @@ import androidx.fragment.app.Fragment;
 public class LoginFragment extends Fragment {
 
     private EditText etUsername, etPassword;
+    private CheckBox cbShowPassword;
     private Button btnLogin;
 
     @Nullable
@@ -24,7 +27,17 @@ public class LoginFragment extends Fragment {
 
         etUsername = view.findViewById(R.id.et_login_username);
         etPassword = view.findViewById(R.id.et_login_password);
+        cbShowPassword = view.findViewById(R.id.cb_show_password);
         btnLogin = view.findViewById(R.id.btn_login_submit);
+
+        cbShowPassword.setOnCheckedChangeListener((buttonView, isChecked) -> {
+            if (isChecked) {
+                etPassword.setInputType(InputType.TYPE_TEXT_VARIATION_VISIBLE_PASSWORD);
+            } else {
+                etPassword.setInputType(InputType.TYPE_CLASS_TEXT | InputType.TYPE_TEXT_VARIATION_PASSWORD);
+            }
+            etPassword.setSelection(etPassword.getText().length());
+        });
 
         btnLogin.setOnClickListener(v -> {
             String username = etUsername.getText().toString().trim();
@@ -41,3 +54,4 @@ public class LoginFragment extends Fragment {
         return view;
     }
 }
+
