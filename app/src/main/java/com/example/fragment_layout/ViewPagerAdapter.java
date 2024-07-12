@@ -18,7 +18,7 @@ public class ViewPagerAdapter extends FragmentStateAdapter {
             case 0:
                 return new LoginFragment();
             case 1:
-                return new SignInFragment();
+                return new SignUpFragment();
             case 2:
                 return new AdminLoginFragment();
             default:

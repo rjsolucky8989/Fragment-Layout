@@ -2,46 +2,65 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:padding="16dp"
+    android:background="#0d1b2a"
     android:gravity="center"
-    android:background="@android:color/white">
+    android:orientation="vertical"
+    android:padding="16dp">
 
     <ImageView
         android:id="@+id/admin_login_logo"
         android:layout_width="200dp"
-        android:layout_height="200dp"
-        android:src="@drawable/logo"
-        android:contentDescription="@string/logo_desc"
+        android:layout_height="150dp"
         android:layout_gravity="center"
-        android:layout_marginBottom="24dp"/>
+        android:layout_marginBottom="24dp"
+        android:contentDescription="@string/logo_desc"
+        android:src="@drawable/logo" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Admin Username"
+        android:textColor="#e0e1dd"
+        android:fontFamily="@font/maderamedium"/>
 
     <EditText
         android:id="@+id/et_admin_username"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:backgroundTint="#e0e1dd"
+        android:fontFamily="@font/maderaregular"
         android:hint="Admin Username"
         android:padding="12dp"
-        android:background="@drawable/edit_text_background"
-        android:layout_marginBottom="16dp"/>
+        android:textColor="#e0e1dd" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Admin Password"
+        android:textColor="#e0e1dd"
+        android:fontFamily="@font/maderamedium"/>
 
     <EditText
         android:id="@+id/et_admin_password"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Admin Password"
-        android:padding="12dp"
-        android:background="@drawable/edit_text_background"
         android:layout_marginBottom="24dp"
-        android:inputType="textPassword"/>
+        android:backgroundTint="#e0e1dd"
+        android:fontFamily="@font/maderaregular"
+        android:hint="Admin Password"
+        android:inputType="textPassword"
+        android:padding="12dp"
+        android:textColor="#e0e1dd" />
 
     <Button
         android:id="@+id/btn_admin_login_submit"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:backgroundTint="#db00b6"
+        android:fontFamily="@font/maderamedium"
         android:text="Admin Login"
-        android:textStyle="bold"
+        android:textColor="#0d1b2a"
         android:textSize="20dp"
-        android:backgroundTint="#ec01f5"
-        android:textColor="@android:color/white"/>
+        android:textStyle="bold" />
 </LinearLayout>
