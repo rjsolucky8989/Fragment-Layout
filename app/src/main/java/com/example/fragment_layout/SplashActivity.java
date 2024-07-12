@@ -15,7 +15,7 @@ public class SplashActivity extends AppCompatActivity {
             @Override
             public void run() {
                 try {
-                    sleep(5000); // 3 seconds delay
+                    sleep(3000); // 3 seconds delay
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 } finally {
