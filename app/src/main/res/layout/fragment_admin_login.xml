@@ -27,7 +27,7 @@
         android:id="@+id/et_admin_username"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="10dp"
+        android:layout_marginBottom="1dp"
         android:backgroundTint="#e0e1dd"
         android:fontFamily="@font/maderaregular"
         android:hint="Admin Username"
@@ -45,13 +45,17 @@
         android:id="@+id/et_admin_password"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="24dp"
         android:backgroundTint="#e0e1dd"
         android:fontFamily="@font/maderaregular"
         android:hint="Admin Password"
         android:inputType="textPassword"
         android:padding="12dp"
         android:textColor="#e0e1dd" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
 
     <CheckBox
         android:id="@+id/cb_show_password"
@@ -61,6 +65,7 @@
         android:textColor="#e0e1dd"
         android:layout_marginBottom="24dp"/>
 
+    </LinearLayout>
     <Button
         android:id="@+id/btn_admin_login_submit"
         android:layout_width="match_parent"
